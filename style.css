@@ -1,0 +1,282 @@
+body{
+	background-color:#f2f2f2;
+	font-family: Nanum Gothic;
+	max-width:1270px;
+	margin: 0 auto !important;
+}
+hr{
+	background-color: black;
+}
+tr{
+	border: solid;
+}
+th{
+	padding-left: 50px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+}
+
+#banner {
+	padding-top: 10px;
+}
+#hButt{
+	margin-left:43%;
+}
+#WoMen{
+	font-family: Faster One;
+	font-size: 60px;
+}
+#mensBut, #womensBut, #shoeBut{
+	margin-top: 20px;
+	background-color: white;
+	border: hidden;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#mensBut:hover, #womensBut:hover, #shoeBut:hover{
+	cursor: pointer;
+}
+#mensBut{
+	margin-left: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+#womensBut{
+	margin-right: 200px;
+}
+#shoeBut{
+	padding-left:35px;
+}
+#homeButt{
+	position: absolute;
+	margin-top: 1px;
+	margin-left: 5px;
+	height : 100px;
+	width : 250px;
+}
+#textOnCart{
+	text-align: center;
+	font-family:  Yanone Kaffeesatz;
+	font-size: 40px;
+}
+#Show-cart{
+	text-align: left;
+	font-family:  Yanone Kaffeesatz;
+	font-size: 20px;
+}
+.add-1-item{
+	float: right;
+	margin-left: 2px;
+	height: 30px;
+	width: 27px;
+}
+.subtract-item{
+	float: right;
+	margin-left: 2px;
+	height: 30px;
+	width: 27px;
+}
+.delete-all{
+	float: right;
+	margin-left: 2px;
+	height: 30px;
+	width: 27px;
+}
+.secHeader{
+	text-align: center;
+	font-family: Faster One;
+	font-size: 60px;
+}
+.butts{
+	margin-left: 200px;
+	text-align:center;
+}
+.homebutts{
+	text-align:center;
+}
+.button{
+	width: 200px;
+	height: 50px;
+	margin: 20px;
+	
+	background-color: white;
+	border-color: grey;
+	padding: 10px;
+	font-family: Yanone Kaffeesatz;
+	font-size: 25px;
+	cursor: pointer;
+}
+.button:hover, .button:focus{
+	border-color: black;
+}
+.dropContent{
+	display: none;
+	position: absolute;
+	background-color:white;
+	width: 100px;
+	z-index: 1;
+}
+.dropContent a {
+	padding: 5px;
+	display:block;
+	text-align:center;
+	color:grey;
+}
+.dropContent a:hover{
+	color:black;
+}
+.homeo .show{
+	margin-top:0%;
+	width: 200px;
+	height: 200px;
+	margin-left: 288px;
+	display:block;
+	font-size:20;
+	z-index: 999;
+}
+.other .show{
+	margin-top:0%;
+	width: 200px;
+	height: 200px;
+	margin-left: 388px;
+	display:block;
+	font-size:20;
+	z-index: 999;
+}
+.pics{
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 400px;
+	height: 650px;
+}
+.pics:hover{
+	box-shadow:5px 5px 5px  #808080; 
+}
+.slide{
+	display:none;
+	width: 890px;
+	height: 300px;
+	cursor: pointer;
+}
+.slideshow{
+	margin-left:200px;
+}
+.productPic{
+	width:90%;
+	height: 25%;
+	border: solid 1px;
+}
+.productPic:hover{
+	box-shadow:5px 5px 5px  #808080; 
+}
+.checkoutButt{
+	width: 265px;
+	height: 50px;
+	margin-top: 5px;
+	border: dashed 5px pink;
+	font-family: Yanone Kaffeesatz;
+	font-size: 25px;
+}
+#checkoutLink{
+	text-decoration: none;
+	color: black;
+}
+
+/* Cuans Code */
+
+
+.form {
+	position: relative;
+	background: grey;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+}
+.form input {
+	font-family: Nanum Gothic;
+	outline: 1;
+	background: lightgrey;
+	width: 100%;
+	border: 1px solid black;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.form button {
+	font-family: Yanone Kaffeesatz;
+	text-transform: uppercase;
+	outline: 0;
+	background: black;
+	width: 100%;
+	height: 40px;
+	border: 1px solid black; 
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+}
+.loginMessage {
+	margin: auto;
+	padding: 10px 0px 0px 40px;
+}
+
+.form button:hover {
+	background: white;
+	color: black;
+	
+}
+
+.form .loginMessage a {
+	text-decoration: none;
+	color: white;
+}
+ .form .register-form {
+	 display: none;
+ }
+
+#passStrength {
+	font-size: 80%;
+	color: red;
+	padding: 0px 0px 10px 0px;
+}
+
+.errorReps {
+	color: red;
+	font-size: 80%;
+	padding: 0px 0px 10px 0px;
+}
+
+#logoutButton {
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+
+}
+/* Keith*/
+#cartContainer
+{
+    
+	position: relative;
+	z-index: 1;
+	background: grey;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+    border: 3px solid black; 
+}
+
+.formCheckout {
+	position: relative;
+	background: grey;
+	max-width: 360px;
+	margin: 0 auto 100px;
+}
+
+#formDiv {
+	padding: 30px;
+	border: 2px solid black;
+	font-family: Yanone Kaffeesatz;
+	text-transform: uppercase;
+	font-size: 20px;
+}

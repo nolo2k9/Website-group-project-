@@ -1,0 +1,82 @@
+<!-- Register/Login -->
+<! DOCTYPE html>
+<html>
+<head>
+	<title>Charcoal - Register/Login</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">
+
+<!-- font import -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yanone+Kaffeesatz|Faster+One" rel="stylesheet">
+
+</head>
+
+<body class = "other">
+		<!-- Navigation Buttons -->
+		<a href = "homepage.html"><img src = "Pictures/homepage/charc.png" id = "homeButt"></img></a>
+		<div class = "butts">
+		<button onclick = "dropdown()" class = "button">Shop</button>	
+		<button class = "button">My Account</button>
+		<a href = "shoppingCart.html"><button class = "button">Shopping Cart</button></a>
+		<a href = "register.html"><button class = "button">Login/Register</button></a>
+		</div>
+		<!-- dropdown -->
+		<div id = "myDropDwn" class= "dropContent">
+		<a href = "womens.html"> Womens </a>
+		<a href = "mens.html"> Mens </a>
+		<a href = "shoes.html"> Shoes </a>
+		<a href = "allCats.html"> All </a>
+		</div>
+	
+<h1 class = "secHeader">Login</h1>
+	<div class="login-page" class="col-lg-6">
+		<div class="form">
+			<!--Log In/Out-->
+			<form id="logForm" class="login-form">
+				<input id="username" type="text" placeholder="Username">
+				<div id="login-user-error" class="errorReps"></div>
+				
+				<input id="passW" type="password" placeholder="Password">
+				<div id="login-pass-error" class="errorReps"></div>
+				
+				<button type="button" onclick="loginUser();">Login</button>
+				<div id="login-error" class="errorReps"></div>
+				<p class="loginMessage"> Not Registered? <a href="#">Register</a>
+				<br>
+				<br>
+				<a href="register.html" id="logoutButton" onclick="logoutUser();">Logout</a>
+			</form>
+			<!--Register-->
+			<form id="regForm" class="register-form">
+				<input id="newFName" type="text" placeholder="First Name">
+				<div id="reg-FName-error" class="errorReps"></div>
+				
+				<input id="newLName" type="text" placeholder="Last Name">
+				<div id="reg-LName-error" class="errorReps"></div>
+				
+				<input id="newUName" type="text" placeholder="Username">
+				<div id="reg-UName-error" class="errorReps"></div>
+				
+				<input id="newPass" type="password" placeholder="Password">	
+				<div id="reg-pass-error" class="errorReps"></div>
+				<div id="passStrength"></div>
+				
+				<input id="newEmail" type="email" placeholder="Email">
+				<div id="reg-email-error" class="errorReps"></div>
+				
+				<input id="newPhone" type="number" placeholder="Tel. Number">
+				<div id="reg-phone-error" class="errorReps"></div>
+				
+				<button type="button" onclick="registerUser()">Create</button>
+				<p class="loginMessage"> Already Registered? <a href="#">Login</a>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src = "script.js" type = "text/javascript"></script>
+</html>

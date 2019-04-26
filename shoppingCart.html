@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+<head>
+<title>Charcoal - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">
+
+<!-- font import -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yanone+Kaffeesatz|Faster+One" rel="stylesheet">
+
+<!-- klaudija's headers and buttons-->
+<body class = "other" onload = "checkCart()">
+<a href = "homepage.html"><img src = "Pictures/homepage/charc.png" id = "homeButt"></img></a>
+<div class = "butts">
+	<button onclick = "dropdown()" class = "button">Shop</button>	
+	<a href = "shoppingCart.html"><button class = "button">Shopping Cart</button></a>
+	<a href = "register.html"><button class = "button">Login/Register</button></a>
+</div>
+<!-- dropdown -->
+<div id = "myDropDwn" class= "dropContent">
+	<a href = "womens.html"> Womens </a>
+	<a href = "mens.html"> Mens </a>
+	<a href = "shoes.html"> Shoes </a>
+	<a href = "allCats.html"> All </a>
+</div>
+<h1 class = "secHeader"> Shopping Cart</h1>
+    <div id="cartContainer">
+
+        <div>
+            <p id = "Show-cart"><p>
+            <div id = "textOnCart">Total Cart: <span id= "total-cart"></span></div>
+        </div>
+        <div>
+            <button class = "checkoutButt" id= "Clear-cart"> Empty Cart</button>
+			<button class = "checkoutButt" type="button"><a href = "checkout.html" id="checkoutLink"> Go to Checkout</a></button>
+        </div>
+    </div> <!-- container -->
+    
+</body>
+<script src= "https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src = "script.js"></script>
+</html>

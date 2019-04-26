@@ -1,0 +1,55 @@
+<!-- shoe page -->
+<! DOCTYPE html>
+<html>
+<head>
+<title>Charcoal - Shoes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">
+
+<!-- font import -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yanone+Kaffeesatz|Faster+One" rel="stylesheet">
+</head>
+
+<body class = "other">
+<!-- Navigation Buttons -->
+<a href = "homepage.html"><img src = "Pictures/homepage/charc.png" id = "homeButt"></img></a>
+<div class = "butts">
+	<button onclick = "dropdown()" class = "button">Shop</button>	
+	<a href = "shoppingCart.html"><button class = "button">Shopping Cart</button></a>
+	<a href = "register.html"><button class = "button">Login/Register</button></a>
+</div>
+<!-- dropdown -->
+<div id = "myDropDwn" class= "dropContent">
+	<a href = "womens.html"> Womens </a>
+	<a href = "mens.html"> Mens </a>
+	<a href = "shoes.html"> Shoes </a>
+	<a href = "allCats.html"> All </a>
+</div>
+
+<h1 class = "secHeader">Shoes</h1>
+
+<table>
+	<tr>
+		<th><a><img src = "Pictures/shoes/shoe1snap1.jpg" class = "productPic"></a></th>
+		<th><a><img src = "Pictures/shoes/shoe2snap1.jpg" class = "productPic"></a></th>
+		<th><a><img src = "Pictures/shoes/shoe3snap1.jpg" class = "productPic"></a></th>
+	</tr>
+	<tr>
+		<th><p>Trainers - White</p><p>Price: 150.00</p></th>
+		<th><p>Suede Boots - Black</p><p>Price: 425.00</p></th>
+		<th><p>Leather Classic - Brown</p><p>Price: 370.00</p></th>
+	</tr>	
+	<tr>
+		<th><button onclick = "addedFunct()" class = "add-to-cart"  data-name="Trainers" data-price= "150.00">Add to Cart</button></th>
+		<th><button onclick = "addedFunct()" class = "add-to-cart"  data-name="Suede" data-price= "425.00">Add to Cart</button></th>
+		<th><button onclick = "addedFunct()" class = "add-to-cart"  data-name="Leather" data-price= "370.00">Add to Cart</button></th>
+	</tr>
+</table>
+</body>
+<script src= "https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src = "script.js"></script>	
+</html>

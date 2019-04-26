@@ -1,0 +1,64 @@
+<!-- All category page -->
+<! DOCTYPE html>
+<html>
+<head>
+<title>Charcoal - Shop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="style.css">
+
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin = "anonymous">
+
+<!-- font import -->
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Yanone+Kaffeesatz|Faster+One" rel="stylesheet">
+
+</head>
+
+
+<body onload = "carousel()" class = "other">
+<!-- Navigation Buttons -->
+<a href = "homepage.html"><img src = "Pictures/homepage/charc.png" id = "homeButt"></img></a>
+<div class = "butts">
+	<button onclick = "dropdown()" class = "button">Shop</button>
+	<a href = "shoppingCart.html"><button class = "button">Shopping Cart</button></a>
+	<a href = "register.html"><button class = "button">Login/Register</button></a>
+</div>
+
+<!-- dropdown -->
+<div id = "myDropDwn" class= "dropContent">
+	<a href = "womens.html"> Womens </a>
+	<a href = "mens.html"> Mens </a>
+	<a href = "shoes.html"> Shoes </a>
+	<a href = "allCats.html"> All </a>
+</div>
+<hr>
+
+<!--sale banner with discount on click -->
+<div class = "slideshow" >
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale3.jpg">
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale4.jpg">		
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale1.gif">
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale5.jpg">
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale6.jpg">
+	<img onclick = "popup()" class="slide" src = "Pictures/allCats/sale7.jpg">
+</div>
+<hr>
+<!-- navigation -->
+<div id = "WoMen" class = "row">
+	<div class = "col-lg-1">
+	</div>
+	<div class = "col-lg-3">
+	<a href = "mens.html"><button id = "mensBut">Mens</button></a>
+	</div>
+	<div class = "col-lg-3">
+	<a href = "shoes.html"><button id = "shoeBut">Shoes</button></a>
+	</div>
+	<div class = "col-lg-3">
+	<a href = "womens.html"><button id = "womensBut">Womens</button></a>
+	</div>
+</div>
+</body>
+<script src= "https://code.jquery.com/jquery-3.1.1.js"></script>
+<script src = "script.js"></script>	
+</html>
